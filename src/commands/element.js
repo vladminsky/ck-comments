@@ -54,8 +54,7 @@ export function findCommentElementById(doc, id) {
 export function findCommentRange(position, value) {
   return new Range(
     _findBound(position, value, true),
-    _findBound(position, value, false),
-  );
+    _findBound(position, value, false));
 }
 
 function _findBound(position, value, lookBack) {
